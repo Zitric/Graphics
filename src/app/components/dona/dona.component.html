@@ -1,0 +1,14 @@
+<div class="row my-5">
+  <div class="col-md-12">
+    <div class="d-block">
+      <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+              (chartHover)="chartHovered( $event )"
+              (chartClick)="chartClicked( $event )"></canvas>
+    </div>
+    <button class="btn btn-outline-primary btn-block my-4"
+            (click)="randomize()"> CLICK to update data </button>
+  </div>
+</div>
